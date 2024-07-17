@@ -6,11 +6,11 @@ module.exports = (sequelize, Sequelize) => {
         password: Sequelize.STRING,
         emailToken:Sequelize.STRING,
         isVerified: {
-            type: Sequelize.TINYINT,
+            type: Sequelize.INTEGER,
             defaultValue: 0
         },
         refreshToken:Sequelize.STRING,
-        role:Sequelize.TINYINT
+        role:Sequelize.INTEGER
     });
     return User;
 }
